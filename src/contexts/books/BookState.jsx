@@ -62,7 +62,7 @@ const BookState = (props) => {
   const deleteBook = async (id) => {
     const data = { id };
     try {
-      await axiosClient.delete(`/book/delete`, { data });
+      await axiosClient.delete(`/book/delete`, { data });      
       getBooks();
     } catch (error) {
       console.log(error);

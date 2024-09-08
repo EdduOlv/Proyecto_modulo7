@@ -14,7 +14,7 @@ export const BookList = () => {
   useEffect(() => {
     getBooks();
   }, []);
-  console.log(books);
+
   
   return (
     <>
