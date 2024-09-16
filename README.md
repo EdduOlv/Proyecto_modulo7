@@ -7,12 +7,13 @@ Proyecto realizado en React Vite, es el desarrollo de una aplicación web client
 ## Configuracion de variables de entorno
 
 ```
-PORT=3000
-MONGODB_URI=mongodb+srv://admin:admin@ecommerce-ebooks.hd66j.mongodb.net/?retryWrites=true&w=majority&appName=ecommerce-ebooks
-SECRET=PROYECTO7
+VITE_BACKEND_URL=https://proyecto-modulo7-server.onrender.com/api
+VITE_PAYPAL_KEY=AZyAY6khfRAf3OkPSpvWzYYFwR6xVXHzMFGSmsCQvHg-MpymVh-pIOBjPusXp-0VxzwLM5IEn2ZxliBM
 
 ```
 
 ## Despliegue en Netlify
 
-Este link es el enlace previo que se escribe antes de cualquier endpoint.
+El despliegue para la visualicacion del proyecto sera atraves de netlyfi a traves de este enlace :
+
+`https://proyecto7.netlify.app`
