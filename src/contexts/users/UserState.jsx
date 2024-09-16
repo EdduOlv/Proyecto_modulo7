@@ -1,4 +1,3 @@
-
 import React, { useReducer } from 'react'
 import UserContext from './UserContext'
 import UserReducer from './UserReducer'
@@ -26,9 +25,7 @@ const UserState = (props) => {
                 type: "REGISTRO_EXITOSO",
                 payload: res.data
             })
-            console.log("respuesta de axios");
-            
-            console.log(res);
+           
             
             
         } catch (error) {
@@ -41,13 +38,13 @@ const UserState = (props) => {
         try {
             const respuesta = await axiosClient.post("/user/login", dataForm)
             
-            console.log(respuesta);
+          
             dispatch({
                 type: "LOGIN_EXITOSO",
                 payload: respuesta.data
             })
 
-            console.log("respuesta axios");
+        
             
             
         } catch (error) {
@@ -62,7 +59,7 @@ const UserState = (props) => {
         
 
         if(token){
-            axiosClient.defaults.headers.common['authorization'] = `Bearer ${token}`
+            axiosClient.defaults.headers.common['authorization'] = `Bearer ${token}` 
 
         } else{
             delete axiosClient.defaults.headers.common['authorization']
